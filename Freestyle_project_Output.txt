@@ -1,0 +1,28 @@
+Started by user revathitadela
+
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Freestyle1
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Freestyle1\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Revathi-Tadela/my-new-project.git # timeout=10
+Fetching upstream changes from https://github.com/Revathi-Tadela/my-new-project.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.45.2.windows.1'
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/Revathi-Tadela/my-new-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "origin/main^{commit}" # timeout=10
+Checking out Revision 0a728e4e030e32ceeea45acb58a547c115c032e2 (origin/main)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 0a728e4e030e32ceeea45acb58a547c115c032e2 # timeout=10
+Commit message: "Initial commit with script.sh"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 0a728e4e030e32ceeea45acb58a547c115c032e2 # timeout=10
+[Freestyle1] $ cmd /c call C:\WINDOWS\TEMP\jenkins125664420007652114.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Freestyle1>echo hello world 
+hello world
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Freestyle1>exit 0 
+Sending e-mails to: tadelarevathi1989@gmail.com
+
+Finished: SUCCESS

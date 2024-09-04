@@ -1,0 +1,109 @@
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops (master)
+$ ls -lrt
+total 102
+drwxr-xr-x 1 revat 197609     0 Aug  8 00:01 Bash-Scripting/
+-rw-r--r-- 1 revat 197609    13 Aug  8 00:03 file1txt
+-rwxr-xr-x 1 revat 197609   715 Aug 10 00:51 directory_file_operations.sh*
+drwxr-xr-x 1 revat 197609     0 Aug 10 00:51 my_directory/
+drwxr-xr-x 1 revat 197609     0 Aug 10 00:59 workspace/
+-rw-r--r-- 1 revat 197609     0 Aug 10 01:02 startup.sh
+-rw-r--r-- 1 revat 197609     0 Aug 10 01:03 cleanup.sh
+-rwxr-xr-x 1 revat 197609   968 Aug 10 01:04 cron-task.sh*
+drwxr-xr-x 1 revat 197609     0 Aug 10 01:04 build/
+-rw-r--r-- 1 revat 197609   164 Aug 13 22:23 dockerfile
+-rw-r--r-- 1 revat 197609     6 Aug 13 22:24 requirements.txt
+-rw-r--r-- 1 revat 197609  5098 Aug 13 22:26 app.py
+-rw-r--r-- 1 revat 197609   170 Aug 13 22:36 docker-node
+drwxr-xr-x 1 revat 197609     0 Aug 13 22:59 nodejs/
+-rw-r--r-- 1 revat 197609   167 Aug 19 22:16 docker-compose.yaml
+drwxr-xr-x 1 revat 197609     0 Aug 20 01:38 Docker-Task-2/
+drwxr-xr-x 1 revat 197609     0 Aug 20 03:58 Docker-Task/
+-rw-r--r-- 1 revat 197609    57 Aug 21 01:41 package.json
+-rw-r--r-- 1 revat 197609 30853 Aug 21 01:41 package-lock.json
+drwxr-xr-x 1 revat 197609     0 Aug 21 01:41 node_modules/
+drwxr-xr-x 1 revat 197609     0 Aug 21 23:41 hello-world-docker/
+drwxr-xr-x 1 revat 197609     0 Aug 22 21:23 my-git-repo/
+drwxr-xr-x 1 revat 197609     0 Sep  2 15:07 VCS_TASK/
+drwxr-xr-x 1 revat 197609     0 Sep  4 19:42 my-jenkins-project/
+drwxr-xr-x 1 revat 197609     0 Sep  4 21:29 Network-Task/
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops (master)
+$
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops (master)
+$
+
+mkdir my-new-project
+cd my-new-project
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git init
+Initialized empty Git repository in C:/Users/revat/OneDrive/Desktop/Guvi-Devops/my-new-project/.git/
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ echo "echo Hello, World!" > script.sh
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git add script.sh
+git commit -m "Initial commit with script.sh"
+warning: in the working copy of 'script.sh', LF will be replaced by CRLF the next time Git touches it
+[master (root-commit) 0a728e4] Initial commit with script.sh
+ 1 file changed, 1 insertion(+)
+ create mode 100644 script.sh
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git commit -m "Initial commit with script.sh"
+On branch master
+nothing to commit, working tree clean
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ echo "echo Hello, World!" > script.sh
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git add script.sh
+warning: in the working copy of 'script.sh', LF will be replaced by CRLF the next time Git touches it
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git commit -m "Initial commit with script.sh"
+On branch master
+nothing to commit, working tree clean
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git remote add origin https://github.com/yourusername/my-new-project.git
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (master)    
+$ git branch -M main
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$ git push -u origin main
+remote: Repository not found.
+fatal: repository 'https://github.com/yourusername/my-new-project.git/' not found       
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$ ^C
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$ git remote -v
+origin  https://github.com/yourusername/my-new-project.git (fetch)
+origin  https://github.com/yourusername/my-new-project.git (push)
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$ git remote set-url origin https://github.com/Revathi-Tadela/my-new-project.git
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$ git remote -v
+origin  https://github.com/Revathi-Tadela/my-new-project.git (fetch)
+origin  https://github.com/Revathi-Tadela/my-new-project.git (push)
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Revathi-Tadela/my-new-project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+revat@LAPTOP-UKE489SP MINGW64 ~/OneDrive/Desktop/Guvi-Devops/my-new-project (main)      
+$
