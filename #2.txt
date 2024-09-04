@@ -1,0 +1,32 @@
+Started by user revathitadela
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\ProgramData\Jenkins\.jenkins\workspace\rev_pipeline
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Checkout)
+[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Revathi-Tadela/my-git-repo.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\rev_pipeline # timeout=10
+Fetching upstream changes from https://github.com/Revathi-Tadela/my-git-repo.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.2.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/Revathi-Tadela/my-git-repo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/Revathi-Tadela/my-git-repo.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 56e3e651f1db63dfbd3a3948b9588420543be589 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 56e3e651f1db63dfbd3a3948b9588420543be589 # timeout=10
+Commit message: "Update script2.sh in rebase branch"
+First time build. Skipping changelog.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
